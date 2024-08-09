@@ -1,0 +1,133 @@
+.hero{
+    background: rgb(231, 231, 231);
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    &__text__content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 56px;
+            line-height: 56px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #65665C;
+            margin-bottom: 20px;
+        }
+        .search_button{
+            input{
+                width: 250px;
+                padding-left: 30px;
+                height: 46px;
+                font-size: 20px;
+                box-shadow: 0px 2px 4px 0px #00000014;
+                border: 1px solid #E7E8E3
+            }
+            button{
+                background-color: #d26947;
+                color: white;
+                padding: 15px 20px;
+                border-radius: 4px;
+                border: 1px solid #CF6F49;
+                cursor: pointer;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// media 
+@media (max-width: 1300px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 500px;
+        padding: 20px;
+        &_img{
+            img{
+                display: none;
+            }
+        }
+        .search_button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                width: 100%;
+                max-width: 250px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                padding: 12px 80px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 10px;
+
+        h1 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .search_button {
+            input {
+                width: 100%;
+                max-width: 250px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                padding: 12px 80px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        h1 {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .search_button {
+            input {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+        }
+    }
+}
